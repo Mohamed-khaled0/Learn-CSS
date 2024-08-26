@@ -1,0 +1,19 @@
+div{
+    width: 400px;
+    background-color: #EEE;
+    margin-bottom: 10px;
+}
+
+.two{
+overflow: hidden;
+white-space: nowrap;
+border-right: 100px solid #EEE;
+width:300px;
+}
+
+
+.three{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
