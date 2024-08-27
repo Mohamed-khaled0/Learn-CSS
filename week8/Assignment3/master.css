@@ -1,0 +1,33 @@
+.main-ul ,.main-li {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.main-li {
+  background-color: #eee;
+}
+
+ol {
+  padding-left: 30px;
+}
+
+ol li {
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+.pranch-ul {
+  margin-left: -45px;
+}
+
+.pranch-ul li {
+  background-color: white;
+  list-style-position: inside;
+  padding: 5px;
+  margin: 5px;
+}
