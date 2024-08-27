@@ -1,0 +1,33 @@
+.parent{
+    background-color: #EEE;
+    width: 1000px;
+    text-align: center;
+}
+
+div{
+    float: left;
+    padding: 10px 0px;
+    margin:15px 5px  ;
+    background-color: rgb(69, 110, 146);
+    
+}
+.full-width{
+    width: calc(100% - 2*15px) ;
+}
+
+.first-line{
+    width: calc((100% - 15px *4) / 3);
+}
+.second-line {
+    width: calc((100% - 15px *4) / 2);
+
+}
+
+.third-line{
+    width: calc((100% - 15px *4) / 4);
+
+}
+.clear{
+    display: block;
+    clear: both;;
+}
