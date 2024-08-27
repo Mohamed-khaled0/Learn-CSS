@@ -1,0 +1,22 @@
+p {
+  background-color: #eee;
+  width: fit-content;
+  padding: 20px;
+  position: relative;
+  counter-increment: count;
+  border-right: 5px solid #F44336 ;
+  text-align: center;
+  margin: 20px auto;
+}
+
+p::before{
+  content: counter(count);
+  position: absolute;
+  width: 50px;
+  height: 58px;
+  background-color: #f44336;
+  color: white;
+  line-height: 58px;
+  top: calc(50% - 29px);
+  left: -52px;
+}

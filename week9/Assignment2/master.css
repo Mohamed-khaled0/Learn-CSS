@@ -1,0 +1,25 @@
+
+
+div{
+  width: 300px;
+  background-color: #EEE;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+div::first-letter{
+  visibility: hidden;
+
+}
+div::before{
+  content:"1";
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  background-color: red;
+  padding: 10px;
+  color: white;
+
+}
