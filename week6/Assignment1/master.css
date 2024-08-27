@@ -1,0 +1,26 @@
+.dv-one {
+padding: 15px;
+border: 2px solid red;
+text-align: center;
+}
+
+
+ .one {
+    border: 2px solid;
+    border-color: inherit;
+    padding: inherit;
+
+}
+
+.dv-two {
+    padding: 15px;
+    border: 2px solid rgb(0, 129, 101);
+    text-align: center;
+    }
+
+.two {
+    border: 2px solid;
+    border-color: inherit;
+    padding: inherit;
+
+}
