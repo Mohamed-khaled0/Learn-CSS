@@ -1,0 +1,22 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff5722;
+    border-right: 10px solid #ff5722;
+    border-left: 10px solid #03a9f4;
+}

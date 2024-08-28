@@ -1,0 +1,19 @@
+.parent{
+  display: flex;
+  width: 600px;
+  height: 300px;
+  background-color: #eee;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  text-align: center;
+}
+
+div {
+  flex-basis: calc((100% - 90px) / 3);
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+}
