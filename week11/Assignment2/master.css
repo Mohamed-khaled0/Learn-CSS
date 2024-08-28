@@ -1,0 +1,22 @@
+.main {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px !important;
+  background-color: #eee !important;
+  color: black !important;
+  border: none !important;
+  text-align: center;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.main::before {
+  content: "Elzero";
+  color: black;
+  position: absolute;
+  width: 100px;
+  left: 10%;
+}
