@@ -1,0 +1,41 @@
+
+
+
+div::before{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #03A9F4;
+    transform: rotate(-10deg);
+    z-index: -1;
+    position: absolute;
+}
+
+
+div::after{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #E91E63;
+    transform: rotate(10deg);
+    z-index: -1;
+    position: absolute;
+}
+
+
+
+
+div{
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    color:#03A9F4 ;
+    background-color: #eee;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #b9aeae;
+}
