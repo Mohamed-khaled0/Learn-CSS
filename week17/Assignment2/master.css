@@ -1,0 +1,72 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Spinner Styles */
+.spinner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 50px;
+  border: 12px solid #1190F6;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Inner Spinner Layer */
+.spinner::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border: 12px solid #F7AF00;
+  border-radius: 50%;
+  border-right-color: transparent;
+  content: "";
+  animation: spin 3s linear infinite reverse;
+}
+
+/* Outer Spinner Layer */
+.spinner::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  border: 12px solid black;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  content: "";
+  animation: spin 2s linear infinite reverse;
+}
+
+/* Pause Animation on Hover */
+.spinner:hover,
+.spinner:hover::before,
+.spinner:hover::after {
+  animation-play-state: paused;
+}
+
+/* Keyframes for Spin Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
