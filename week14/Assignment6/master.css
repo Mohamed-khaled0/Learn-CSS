@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat( 4, 1fr );
+    gap: 10px;
+    background-color: #ddd;
+}
+
+.osama {
+    grid-area: 1 / 1 / 2 / 3;
+}
+.shady {
+    grid-area: 1 / 4 / 4 / 5 ;
+}
+.mi {
+    grid-area: 2 / 1 / 4 / 2;
+}
+.mahmoud {
+    grid-area: 2 / 2 / 3 / 4;
+}
+.ezz {
+    grid-area: 3 / 2 / 4 / 4; 
+} 
+
+.parent  div {
+    position: relative;
+    padding: 10px;
+    background-color: white;
+}
+.parent div::after {
+    content: "''";
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+    transform: rotate(32deg);
+    color: #a8a8aa;
+    font-size: 50px;
+}
+.parent div::before {
+    content: "";
+    width: 100%;
+    border-bottom: 3px solid #ff3d00;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+div h1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+div .title {
+    color: #a8a8aa;
+    padding-bottom: 10px;
+}
+div .bold {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    line-height: 1.6;
+}
+div .light {
+    line-height: 1.6;
+}
+
+    
+
+
+.parent .shady , .parent .mahmoud , .parent .is {
+    background-color: black;
+    color: white;
+}
+
