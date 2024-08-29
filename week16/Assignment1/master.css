@@ -1,0 +1,30 @@
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto  1fr;
+  gap: 15px;
+
+}
+
+
+
+.grid div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #607D8B;
+}
+
+.grid div::after {
+  content: "ELement " counter(div);
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  counter-increment: div;
+  
+}

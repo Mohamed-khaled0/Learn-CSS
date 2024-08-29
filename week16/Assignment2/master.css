@@ -1,0 +1,64 @@
+.layout{
+  width: 100vw;
+  height: 100vh;
+background-color: #eee;
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(10, 1fr) ;
+color: white;
+}
+
+.layout header {
+  background-color:#03A9F4 ;
+  grid-column: 1/11;
+  grid-row: 1 / 2;
+}
+
+
+.layout section {
+background-color: #FF5722;
+grid-column: 1/8;
+grid-row: 2 /10;
+
+}
+
+
+.layout  aside {
+  background-color: #607D8B;
+  grid-column: 8/11;
+  grid-row: 2 /10;
+}
+
+.layout footer{
+  background-color:#009688;
+  grid-column: 1/11;
+
+}
+
+
+.layout header::before,
+.layout section::before,
+.layout footer::before,
+.layout aside::before,
+.layout section::before {
+  display: block;
+  color: white;
+  padding: 20px;
+}
+
+.layout header::before{
+  content: "Header";
+
+}
+
+.layout section::before {
+  content: "Section";
+}
+
+.layout footer::before {
+  content: "Footer";
+}
+
+.layout aside::before {
+  content: "Aside";
+}
