@@ -1,0 +1,46 @@
+.arrow-container .arrow {
+  width: 250px;
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.arrow-top::before,
+.arrow-right::before,
+.arrow-bottom::before,
+.arrow-left::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 10px;
+}
+
+.arrow-top::before {
+  left: 50%;
+  top: -9px;
+  transform: translate(-50%, -50%);
+  border-color: transparent transparent #eee transparent;
+}
+
+.arrow-bottom::before {
+  left: 50%;
+  top: calc(100% + 10px);
+  transform: translate(-50%, -50%);
+  border-color: #eee transparent transparent transparent;
+}
+
+.arrow-left::before {
+  left: -10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-color: transparent #eee transparent transparent;
+}
+
+.arrow-right::before {
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-color: transparent transparent transparent #eee;
+}
